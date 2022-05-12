@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Frutibouilleur</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body class="d-xxl-flex flex-column justify-content-xxl-center align-items-xxl-center" style="background: #ACE66B;height:100vh;">
+    <div class="container" style="margin-bottom: 39px;">
+        <div class="row">
+            <div class="col-md-12 d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xxl-4 offset-xxl-1">
+                <div class="d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="padding: 30px;background: #CCEDA6;border-radius: 27px;">
+                    <svg width="350" height="350" wiewBox="0 0 350 350">
+                        <filter id="faceFilter">
+                            <feColorMatrix in="SourceGraphic" type="matrix" id="faceColor" values="1 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0" result="flood" color-interpolation-filters="sRGB" />
+                        </filter>
+                        <filter id="hairFilter">
+                            <feColorMatrix in="SourceGraphic" type="matrix" id="hairColor" values="1 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0" result="flood" color-interpolation-filters="sRGB" />
+                        </filter>
+                        <image href="./assets/images/elements/transparent.png" width="350" height="350" x="0" y="0" filter="url(#hairFilter)" id="imgHairCutComplement" />
+                        <image href="./assets/images/elements/b_petite.svg" width="350" height="350" x="0" y="0" filter="url(#faceFilter)" id="imgMouth" />
+                        <image href="./assets/images/elements/yh_manga_marron_r.svg" width="350" height="350" x="0" y="0" id="imgEyes" />
+                        <image href="./assets/images/elements/ch_mecapo.svg" width="350" height="350" x="0" y="0" filter="url(#hairFilter)" id="imgHairCut" />
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-6 offset-xxl-0">
+                <div class="d-flex flex-column align-items-center align-items-xxl-center" style="padding-bottom: 18px;">
+                    <label class="form-label">Visage :</label>
+                    <select class="form-select-sm" id="colorSelectFace" style="background: rgb(208,233,180);border-style: none;width: 176px;"> </select>
+                </div>
+                <div class="d-flex flex-column align-items-center align-items-xxl-center" style="padding-bottom: 18px;">
+                    <label class="form-label">Cheveux :</label>
+                    <select class="form-select-sm" style="background: rgb(208,233,180);border-style: none;width: 176px;margin-bottom: 10px;" id="selectHairCut">
+                    </select>
+                    <select class="form-select-sm" style="background: rgb(208,233,180);border-style: none;width: 176px;" id="selectHairColor">
+                    </select>
+                </div>
+                <div class="d-flex flex-column align-items-center align-items-xxl-center" style="padding-bottom: 18px;">
+                    <label class="form-label">Yeux :</label>
+                    <select class="form-select-sm" style="background: rgb(208,233,180);border-style: none;width: 176px;" id="selectEyes">
+                    </select>
+                </div>
+                <div class="d-flex flex-column align-items-center align-items-xxl-center" style="padding-bottom: 18px;">
+                    <label class="form-label">Bouche :</label>
+                    <select class="form-select-sm" id="selectMouth" style="background: rgb(208,233,180);border-style: none;width: 176px;">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+</html>
