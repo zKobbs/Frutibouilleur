@@ -79,10 +79,10 @@ var hairs = [
 	['Selho', 'ch_selho', 'ch_selho_c.svg'],
 	['Barsil', 'ch_barsil', 'transparent.png'],
 	['Huha', 'cf_huha', 'transparent.png'],
-    ['Ernleg', 'cf_ernleg', 'cf_ernleg_c.svg'],
-    ['Bersul', 'ch_bersul', 'transparent.png'],
-    ['Culbur', 'ch_culbur', 'ch_culbur_c.svg'],
-    ['Solnar', 'ch_solnar', 'transparent.png'],
+  ['Ernleg', 'cf_ernleg', 'cf_ernleg_c.svg'],
+  ['Bersul', 'ch_bersul', 'transparent.png'],
+  ['Culbur', 'ch_culbur', 'ch_culbur_c.svg'],
+  ['Solnar', 'ch_solnar', 'transparent.png'],
 	['Nirlem', 'cf_nirlem', 'cf_nirlem_c.svg'],
 	['Sellug', 'ch_sellug', 'ch_sellug_c.svg'],
 ];
@@ -139,6 +139,14 @@ var eyes = [
 	['Gros yeux homme orange', 'yh_gros_orange'],
 	['Gros yeux homme rouge', 'yh_gros_rouge'],
 	['Gros yeux homme vert', 'yh_gros_vert'],
+	['Fatigué homme bleu (avec reflets)', 'yh_fatigue_bleu_r'],
+	['Fatigué homme bleu', 'yh_fatigue_bleu'],
+	['Fatigué homme cyan', 'yh_fatigue_cyan'],
+	['Fatigué homme marron', 'yh_fatigue_marron'],
+	['Fatigué homme mauve', 'yh_fatigue_mauve'],
+	['Fatigué homme orange', 'yh_fatigue_orange'],
+	['Fatigué homme rouge', 'yh_fatigue_rouge'],
+	['Fatigué homme vert', 'yh_fatigue_vert'],
 ];
 
 for (var i = 0; i < colors.length; i++) {
