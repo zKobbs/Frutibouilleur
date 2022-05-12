@@ -7,7 +7,6 @@ var pathAssetsImg = "./assets/images/elements/";
 var chosenFaceColor;
 var chosenHairColor;
 var chosenHaircut;
-
 var colors = [
 	['Blanc', '#FFFFFF'],
 	['Pâle 1', '#FFE7CE'],
@@ -63,7 +62,6 @@ var colors = [
 	['Cyan 1', '#37BEB4'],
 	['Cyan 2', '#329B9B'],
 ];
-
 var hairs = [
 	['Mecapo', 'ch_mecapo', 'transparent.png'],
 	['Gomhi', 'ch_gomhi', 'ch_gomhi_c.svg'],
@@ -79,14 +77,13 @@ var hairs = [
 	['Selho', 'ch_selho', 'ch_selho_c.svg'],
 	['Barsil', 'ch_barsil', 'transparent.png'],
 	['Huha', 'cf_huha', 'transparent.png'],
-  ['Ernleg', 'cf_ernleg', 'cf_ernleg_c.svg'],
-  ['Bersul', 'ch_bersul', 'transparent.png'],
-  ['Culbur', 'ch_culbur', 'ch_culbur_c.svg'],
-  ['Solnar', 'ch_solnar', 'transparent.png'],
+	['Ernleg', 'cf_ernleg', 'cf_ernleg_c.svg'],
+	['Bersul', 'ch_bersul', 'transparent.png'],
+	['Culbur', 'ch_culbur', 'ch_culbur_c.svg'],
+	['Solnar', 'ch_solnar', 'transparent.png'],
 	['Nirlem', 'cf_nirlem', 'cf_nirlem_c.svg'],
 	['Sellug', 'ch_sellug', 'ch_sellug_c.svg'],
 ];
-
 var mouths = [
 	['Petite', 'b_petite'],
 	['Moyenne', 'b_moyenne'],
@@ -94,7 +91,6 @@ var mouths = [
 	['Bec', 'b_bec'],
 	['Machoire', 'b_machoire']
 ]
-
 var eyes = [
 	['Manga homme marron (avec reflets)', 'yh_manga_marron_r'],
 	['Manga homme bleu (avec reflets)', 'yh_manga_bleu_r'],
@@ -148,87 +144,57 @@ var eyes = [
 	['Fatigué homme rouge', 'yh_fatigue_rouge'],
 	['Fatigué homme vert', 'yh_fatigue_vert'],
 ];
-
-for (var i = 0; i < colors.length; i++) {
-	colorSelectFace.add(
-		new Option(
-			colors[i][0], colors[i][1]
-		)
-	);
+for(var i = 0; i < colors.length; i++) {
+	colorSelectFace.add(new Option(colors[i][0], colors[i][1]));
 }
-
-for (var i = 0; i < colors.length; i++) {
-	selectHairColor.add(
-		new Option(
-			colors[i][0], colors[i][1]
-		)
-	);
+for(var i = 0; i < colors.length; i++) {
+	selectHairColor.add(new Option(colors[i][0], colors[i][1]));
 }
-
-for (var i = 0; i < mouths.length; i++) {
-	selectMouth.add(
-		new Option(
-			mouths[i][0], mouths[i][1]
-		)
-	);
+for(var i = 0; i < mouths.length; i++) {
+	selectMouth.add(new Option(mouths[i][0], mouths[i][1]));
 }
-
-for (var i = 0; i < eyes.length; i++) {
-	selectEyes.add(
-		new Option(
-			eyes[i][0], eyes[i][1]
-		)
-	);
+for(var i = 0; i < eyes.length; i++) {
+	selectEyes.add(new Option(eyes[i][0], eyes[i][1]));
 }
-
-for (var i = 0; i < hairs.length; i++) {
-	selectHairCut.add(
-		new Option(
-			hairs[i][0], hairs[i][1]
-		)
-	);
+for(var i = 0; i < hairs.length; i++) {
+	selectHairCut.add(new Option(hairs[i][0], hairs[i][1]));
 }
-
 selectHairColor.addEventListener("change", function() {
 	var chosenHairColor = document.getElementById('selectHairColor').value;
-	for (var i = 0; i < colors.length; i++) {
-		if (chosenHairColor === colors[i][1]) {
+	for(var i = 0; i < colors.length; i++) {
+		if(chosenHairColor === colors[i][1]) {
 			document.getElementById('hairColor').setAttribute('values', convertHexTofeColorMatrix(colors[i][1]));
 		}
 	}
 });
-
 colorSelectFace.addEventListener("change", function() {
 	var chosenFaceColor = document.getElementById('colorSelectFace').value;
-	for (var i = 0; i < colors.length; i++) {
-		if (chosenFaceColor === colors[i][1]) {
+	for(var i = 0; i < colors.length; i++) {
+		if(chosenFaceColor === colors[i][1]) {
 			document.getElementById('faceColor').setAttribute('values', convertHexTofeColorMatrix(colors[i][1]));
 		}
 	}
 });
-
 selectMouth.addEventListener("change", function() {
 	var chosenMouth = document.getElementById('selectMouth').value;
-	for (var i = 0; i < mouths.length; i++) {
-		if (chosenMouth === mouths[i][1]) {
+	for(var i = 0; i < mouths.length; i++) {
+		if(chosenMouth === mouths[i][1]) {
 			document.getElementById('imgMouth').setAttribute('href', pathAssetsImg + mouths[i][1] + ".svg");
 		}
 	}
 });
-
 selectEyes.addEventListener("change", function() {
 	var chosenEyes = document.getElementById('selectEyes').value;
-	for (var i = 0; i < eyes.length; i++) {
-		if (chosenEyes === eyes[i][1]) {
+	for(var i = 0; i < eyes.length; i++) {
+		if(chosenEyes === eyes[i][1]) {
 			document.getElementById('imgEyes').setAttribute('href', pathAssetsImg + eyes[i][1] + ".svg");
 		}
 	}
 });
-
 selectHairCut.addEventListener("change", function() {
 	var chosenHairCut = document.getElementById('selectHairCut').value;
-	for (var i = 0; i < hairs.length; i++) {
-		if (chosenHairCut === hairs[i][1]) {
+	for(var i = 0; i < hairs.length; i++) {
+		if(chosenHairCut === hairs[i][1]) {
 			document.getElementById('imgHairCut').setAttribute('href', pathAssetsImg + hairs[i][1] + ".svg");
 			document.getElementById('imgHairCutComplement').setAttribute('href', pathAssetsImg + hairs[i][2]);
 		}
@@ -237,7 +203,7 @@ selectHairCut.addEventListener("change", function() {
 
 function convertHexTofeColorMatrix(hex) {
 	var newHex = hex.replace(/#/g, '');
-	if (newHex.length != 6) {
+	if(newHex.length != 6) {
 		return false;
 	}
 	var aRgbHex = newHex.match(/.{1,2}/g);
