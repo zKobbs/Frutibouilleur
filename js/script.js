@@ -140,7 +140,10 @@ var eyes = [
 	['Fatigué homme  rouge (avec reflets)', 'yh_fatigue_rouge_r'],
 	['Fatigué homme orange cerclé', 'yh_fatigue_orange_c'],
 	['Fatigué homme bleu cerclé', 'yh_fatigue_bleu_c'],
-
+	['Fatigué homme bleu', 'yh_fatigue_bleu'],
+	['Fatigué homme cyan', 'yh_fatigue_cyan'],
+	['Fatigué homme marron', 'yh_fatigue_marron'],
+	['Fatigué homme mauve', 'yh_fatigue_mauve'],
 	['Fatigué homme orange', 'yh_fatigue_orange'],
 	['Fatigué homme rouge', 'yh_fatigue_rouge'],
 	['Fatigué homme vert', 'yh_fatigue_vert'],
