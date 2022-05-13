@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Pixeled';
-    src: url('./assets/fonts/Pixeled.eot');
-    src: url('./assets/fonts/Pixeled.eot?#iefix') format('embedded-opentype'),
-         url('./assets/fonts/Pixeled.woff2') format('woff2'),
-         url('./assets/fonts/Pixeled.woff') format('woff'),
-         url('./assets/fonts/Pixeled.ttf')  format('truetype'),
-         url('./assets/fonts/Pixeled.svg#svgFontName') format('svg');
+    src: url('../fonts/Pixeled.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Pixeled.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pixeled.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Pixeled.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Pixeled.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Pixeled.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 html {
