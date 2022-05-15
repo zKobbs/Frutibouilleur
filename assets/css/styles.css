@@ -78,3 +78,8 @@ body {
         margin: 20px;
     }
 }
+@media (max-width: 429px) {
+    #container {
+        position: fixed;
+    }
+}
