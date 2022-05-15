@@ -1,61 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Frutibouilleur</title>
-        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/fonts/fontawesome-all.min.css">
-        <link rel="stylesheet" href="./assets/css/styles.css">
-    </head>
-    <body class="d-flex justify-content-center align-items-center">
-        <div class="container">
-            <div class="row" style="margin-bottom: 16px;">
-                <div class="col-md-12 d-flex justify-content-center"><img /></div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
-                    <div style="padding: 40px;background: #CCEDA6;border-radius: 25px;margin:15px;">
-                        <svg width="320" height="320" wiewBox="0 0 320 320">
-                            <filter id="faceFilter">
-                                <feColorMatrix in="SourceGraphic" type="matrix" id="faceColor" values="1 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0" result="flood" color-interpolation-filters="sRGB" />
-                            </filter>
-                            <filter id="hairFilter">
-                                <feColorMatrix in="SourceGraphic" type="matrix" id="hairColor" values="1 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0" result="flood" color-interpolation-filters="sRGB" />
-                            </filter>
-                            <image href="./assets/images/elements/transparent.png" width="320" height="320" x="0" y="0" filter="url(#hairFilter)" id="imgHairCutComplement" />
-                            <image href="./assets/images/elements/b_petite.svg" width="320" height="320" x="0" y="0" filter="url(#faceFilter)" id="imgMouth" />
-                            <image href="./assets/images/elements/yh_manga_marron_r.svg" width="320" height="320" x="0" y="0" id="imgEyes" />
-                            <image href="./assets/images/elements/ch_mecapo.svg" width="320" height="320" x="0" y="0" filter="url(#hairFilter)" id="imgHairCut" />
-                        </svg>
-                    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutibouilleur</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="bouille">
+            <svg width="320" height="320" wiewBox="0 0 320 320">
+                <filter id="faceFilter">
+                    <feColorMatrix in="SourceGraphic" type="matrix" id="faceColor" values="1 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0" result="flood" color-interpolation-filters="sRGB" />
+                </filter>
+                <filter id="hairFilter">
+                    <feColorMatrix in="SourceGraphic" type="matrix" id="hairColor" values="1 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0" result="flood" color-interpolation-filters="sRGB" />
+                </filter>
+                <image href="./assets/images/elements/transparent.png" width="320" height="320" x="0" y="0" filter="url(#hairFilter)" id="imgHairCutComplement" />
+                <image href="./assets/images/elements/b_petite.svg" width="320" height="320" x="0" y="0" filter="url(#faceFilter)" id="imgMouth" />
+                <image href="./assets/images/elements/yh_manga_marron_r.svg" width="320" height="320" x="0" y="0" id="imgEyes" />
+                <image href="./assets/images/elements/ch_mecapo.svg" width="320" height="320" x="0" y="0" filter="url(#hairFilter)" id="imgHairCut" />
+            </svg>
+        </div>
+        <div id="rowForm">
+            <div class="customForm">
+                <div class="customElement">
+                    <label for="face">Visage :</label>
+                    <select name="face" id="colorSelectFace"></select>
                 </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-start" style="font-size: 11px;color: #6D9431">
-                    <div class="d-flex flex-column" style="width: 250px;padding:15px;">
-                        <label class="form-label text-uppercase" style="font-family: Pixeled;">Visage :</label>
-                        <select class="form-select-sm" id="colorSelectFace" style="border-radius: 6px;border-style: none;background: rgb(255,255,255);padding-left: 5px;padding-bottom: 5px;padding-top: 3px;"> </select>
-                    </div>
-                    <div class="d-flex flex-column" style="width: 250px;padding:15px;">
-                        <label class="form-label text-uppercase" style="font-family: Pixeled;">Cheveux :</label>
-                        <select class="form-select-sm" style="border-radius: 6px;border-style: none;background: rgb(255,255,255);padding-left: 5px;padding-bottom: 5px;padding-top: 3px;" id="selectHairCut">
-                        </select>
-                        <select class="form-select-sm" style="border-radius: 6px;border-style: none;background: rgb(255,255,255);margin-top:5px;padding-left: 5px;padding-bottom: 5px;padding-top: 3px;" id="selectHairColor">
-                        </select>
-                    </div>
-                    <div class="d-flex flex-column" style="width: 250px;padding:15px;">
-                        <label class="form-label text-uppercase" style="font-family: Pixeled;">Yeux :</label>
-                        <select class="form-select-sm" style="border-radius: 6px;border-style: none;background: rgb(255,255,255);padding-left: 5px;padding-bottom: 5px;padding-top: 3px;" id="selectEyes">
-                        </select>
-                    </div>
-                    <div class="d-flex flex-column" style="width: 250px;padding:15px;">
-                        <label class="form-label text-uppercase" style="font-family: Pixeled;">Bouche :</label>
-                        <select class="form-select-sm" id="selectMouth" style="border-radius: 6px;border-style: none;background: rgb(255,255,255);padding-left: 5px;padding-bottom: 5px;padding-top: 3px;">
-                        </select>
-                    </div>
+                <div class="customElement">
+                    <label for="hair">Cheveux :</label>
+                    <select name="hair" id="selectHairCut"></select>
+                    <select name="hair" id="selectHairColor"></select>
+                </div>
+            </div>
+            <div class="customForm">
+                <div class="customElement">
+                    <label for="eyes">Yeux :</label>
+                    <select name="eyes" id="selectEyes"></select>
+                </div>
+                <div class="customElement">
+                    <label for="mouth">Bouche :</label>
+                    <select name="mouth" id="selectMouth"></select>
                 </div>
             </div>
         </div>
-    </body>
-    <script src="./js/script.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
 </html>

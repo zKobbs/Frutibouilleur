@@ -1,19 +1,80 @@
-@font-face {
-    font-family: 'Pixeled';
-    src: url('../fonts/Pixeled.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Pixeled.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Pixeled.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/Pixeled.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/Pixeled.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/Pixeled.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
 html {
-    height: -webkit-fill-available;
+    height: 100%;
 }
 
 body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    background-color: #ACE66B;
+    background-image: url("../images/bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 3px solid #eee;
+    width: 1000px;
+    align-items: center;
+    box-shadow: 0 5px #7dae3a;
+}
+
+#rowForm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#bouille {
+    background-color: #CCEDA6;
+    border-radius: 30px;
+    width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customForm {
+    color: #0A1E00;
+    height: 250px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customElement {
+    display: flex;
+    flex-direction: column;
+}
+
+.customElement select {
+    margin-top: 5px;
+    width: 140px;
+    padding: 7px;
+}
+
+#container div {
+    margin: 10px;
+}
+
+@media (max-width: 1065px) {
+    body {
+        background-image: none !important;
+        background-color: #ACE66B;
+    }
+
+    #container {
+        flex-direction: column;
+        margin: 20px;
+    }
 }
