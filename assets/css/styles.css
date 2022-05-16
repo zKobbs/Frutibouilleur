@@ -25,6 +25,7 @@ body {
     border: 4px solid #eee;
     box-shadow: 0 0 0 1pt rgb(56, 56, 56);
     width: 1000px;
+    min-height: 400px;
     align-items: center;
 }
 
@@ -62,7 +63,7 @@ body {
     -moz-appearance: none;
     appearance: none;
     margin-top: 5px;
-    width: 140px;
+    width: 190px;
     border: none;
     padding: 9px;
     border-radius: 5px;
