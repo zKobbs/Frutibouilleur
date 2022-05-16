@@ -35,12 +35,14 @@ body {
 }
 
 #bouille {
-    background-color: #CCEDA6;
+    background-color: #c3f197;
     border-radius: 30px;
     width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #858a86;
+    box-shadow: 0 0 0 3pt #EEEEEE;
 }
 
 .customForm {
@@ -78,6 +80,11 @@ body {
         margin: 20px;
         background-color: #ACE66B;
         border: none;
+        box-shadow: none;
+    }
+
+    #bouille {
+        border: 4px solid #aada7c;
         box-shadow: none;
     }
 }
