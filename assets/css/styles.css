@@ -76,8 +76,12 @@ body {
     #container {
         flex-direction: column;
         margin: 20px;
+        background-color: #ACE66B;
+        border: none;
+        box-shadow: none;
     }
 }
+
 @media (max-width: 429px) {
     #container {
         position: fixed;
