@@ -83,7 +83,7 @@ var hairs = [
 	['Solnar', 'ch_solnar', 'transparent.png'],
 	['Nirlem', 'cf_nirlem', 'cf_nirlem_c.svg'],
 	['Sellug', 'ch_sellug', 'ch_sellug_c.svg'],
-	['Hiko', 'ch_hiko', 'transparent.png'],
+	['Hiko', 'ch_hiko', 'ch_hiko_c.svg'],
 ];
 var mouths = [
 	['Petite', 'b_petite'],
