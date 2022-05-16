@@ -83,6 +83,7 @@ var hairs = [
 	['Solnar', 'ch_solnar', 'transparent.png'],
 	['Nirlem', 'cf_nirlem', 'cf_nirlem_c.svg'],
 	['Sellug', 'ch_sellug', 'ch_sellug_c.svg'],
+	['Hiko', 'ch_hiko', 'transparent.png'],
 ];
 var mouths = [
 	['Petite', 'b_petite'],
@@ -147,6 +148,7 @@ var eyes = [
 	['Fatigué homme orange', 'yh_fatigue_orange'],
 	['Fatigué homme rouge', 'yh_fatigue_rouge'],
 	['Fatigué homme vert', 'yh_fatigue_vert'],
+	['Hiko', 'yh_hiko'],
 ];
 for(var i = 0; i < colors.length; i++) {
 	colorSelectFace.add(new Option(colors[i][0], colors[i][1]));
