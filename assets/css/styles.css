@@ -25,7 +25,6 @@ body {
     border: 4px solid #eee;
     box-shadow: 0 0 0 1pt rgb(56, 56, 56);
     width: 1000px;
-    min-height: 400px;
     align-items: center;
 }
 
@@ -59,18 +58,9 @@ body {
 }
 
 .customElement select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     margin-top: 5px;
-    width: 190px;
-    border: none;
-    padding: 9px;
-    border-radius: 5px;
-    outline: 1px solid transparent;
-    border-right: 14px solid transparent;
-    background-color: rgb(240, 240, 240);
-    font-size: 14px;
+    width: 140px;
+    padding: 7px;
 }
 
 #container div {
