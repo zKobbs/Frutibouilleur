@@ -60,7 +60,12 @@ body {
 .customElement select {
     margin-top: 5px;
     width: 140px;
-    padding: 7px;
+    border: none;
+    padding: 9px;
+    border-radius: 5px;
+    outline: 1px solid transparent;
+    border-right: 14px solid transparent;
+    background-color: rgb(240, 240, 240);
 }
 
 #container div {
