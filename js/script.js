@@ -89,7 +89,7 @@ var hairs = [
     ['Nirlem', 'cf_nirlem', 'cf_nirlem_c.svg', 'girl'],
     ['Sellug', 'ch_sellug', 'ch_sellug_c.svg', 'boy'],
     ['Hiko', 'ch_hiko', 'ch_hiko_c.svg', 'boy'],
-];
+].sort();
 var mouths = [
     ['Petite', 'b_petite'],
     ['Moyenne', 'b_moyenne'],
