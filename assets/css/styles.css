@@ -84,6 +84,7 @@ body {
     #bouille {
         border: 4px solid #aada7c;
         box-shadow: none;
+        border-radius: 30px;
     }
 }
 
